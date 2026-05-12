@@ -1,0 +1,62 @@
+rastreamento-barris/
+│
+├── app/
+│   ├── main.py
+│   ├── config.py
+│   ├── database/
+│   │   ├── connection.py
+│   │   ├── models.py
+│   │   └── base.py
+│   ├── routes/
+│   │   ├── barris.py
+│   │   ├── clientes.py
+│   │   ├── movimentacoes.py
+│   │   └── indicadores.py
+│   ├── services/
+│   │   ├── barril_service.py
+│   │   ├── cliente_service.py
+│   │   ├── movimentacao_service.py
+│   │   └── indicador_service.py
+│   ├── schemas/
+│   │   ├── barril_schema.py
+│   │   ├── cliente_schema.py
+│   │   ├── movimentacao_schema.py
+│   │   └── auth_schema.py
+│   └── templates/
+│       ├── index.html
+│       ├── barris.html
+│       ├── clientes.html
+│       ├── movimentacoes.html
+│       └── dashboard.html
+│
+├── static/
+│   ├── css/
+│   │   └── style.css
+│   ├── js/
+│   │   ├── barris.js
+│   │   ├── clientes.js
+│   │   ├── movimentacoes.js
+│   │   └── dashboard.js
+│   └── img/
+│
+├── analytics/
+│   ├── analise_barris.py
+│   ├── relatorios.py
+│   └── graficos.py
+│
+├── tests/
+│   ├── test_barris.py
+│   ├── test_clientes.py
+│   ├── test_movimentacoes.py
+│   └── test_indicadores.py
+│
+├── .env
+├── .gitignore
+├── requirements.txt
+└── README.md
+
+
+# 1. COMANDOS PARA FUNCIONAMENTO DO PROGRMA 
+
+#   Ativação Venv: venv\Scripts\Activate.ps1
+#   Ativação Sevidor: python -m uvicorn app.main:app --reload
